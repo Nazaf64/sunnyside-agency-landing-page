@@ -32,6 +32,76 @@ font-family: 'Fraunces', serif; */
     /* color: white; */
 }
 
+/* #container{
+    margin: 0 auto;
+} */
+
+#top-container{
+    background-image: url("images/desktop/image-header.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+#pic-desc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.small-card{
+    height: 50vh;
+    width: auto;
+    /* width: 50%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.egg {
+    background-image: url("images/desktop/image-transform.jpg");
+}
+
+.cup{
+    background-image: url("images/desktop/image-stand-out.jpg");
+}
+
+.berries{
+    background-image: url("images/desktop/image-graphic-design.jpg");
+}
+
+.orange{
+    background-image: url("images/desktop/image-photography.jpg");
+}
+
+#testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#pictures{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+img.gallery{
+    width: 25vw;
+}
+
 @media screen and (max-width:850px){
 
 }

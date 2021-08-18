@@ -34,33 +34,33 @@ font-family: 'Fraunces', serif; */
             box-sizing: border-box;
 }
 
-/* #container{
-    margin: 0 auto;
-} */
-
 #top-container{
     background-image: url("images/desktop/image-header.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+
 }
 
 header{
     margin: 0 auto;
+    padding-top: 2rem;
     width: 90%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     justify-content: space-between;
 }
-/* header #nav-div{
-    justify-content: end;
-} */
+
+nav#top-nav{
+    justify-self: end;
+}
 
 nav, p{
     font-family: 'Barlow', sans-serif;
 }
 
-h1, h2, a.learn-more, p.testimony-person strong{
+nav#top-nav ul li a#contact, h1, h2, a.learn-more, p.testimony-person strong{
     font-family: 'Fraunces', serif;
 } 
 
@@ -70,16 +70,36 @@ nav#top-nav ul li{
 
 nav#top-nav ul li a{
     color: white;
+    font-size: 0.9rem;
+    margin-left: 2rem;
     text-decoration: none;
 }
 
+nav#top-nav ul li a#contact{
+    background-color: white;
+    border-radius: 40px;
+    color: black;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.7rem 1.5rem;
+    text-transform: uppercase;
+}
+
+main{
+    display: grid;
+    height: 100%;
+}
+
 main h1{
+    justify-self: center;
     color: white;
     font-size: 2.5rem;
     font-weight: 900;
+    margin-top: 10vh;
+    min-width: 85%;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
-    text-align: center;
 }
 
 #pic-desc{
@@ -88,7 +108,7 @@ main h1{
 }
 
 .small-card{
-    height: 70vh;
+    min-height: 70vh;
     width: auto;
     /* width: 50%; */
     background-position: center;
@@ -119,14 +139,34 @@ main h1{
 
 .content-2{
     display: grid;
-    align-content: center;
+    align-content: start;
     height: 100%;
     max-width: 60%;
     margin: 0 auto;
+    margin-top: 19rem;
+    padding-bottom: 10vh;
     text-align: center;
 }
 
+.content-2 h2{
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-transform: capitalize;
+}
 
+.content-2 p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.3rem;
+}
+
+.content-2 .graphic{
+    color: var(--dark-desaturated-cyan);
+}
+
+.content-2 .photography{
+    color: var(--dark-blue);
+}
 
 a.learn-more{
     font-size: 0.88rem;
@@ -178,9 +218,56 @@ a.learn-more.one::after{
     background-image: url("images/desktop/image-photography.jpg");
 }
 
+#testimonial-section{
+    display: grid;
+}
+
+h2#testimonial-header{
+    justify-self: center;
+    color: var(--grayish-blue);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
 #testimonials{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.testimonial{
+    display: grid;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.testimonial img{
+    justify-self: center;
+}
+
+.testimonial p{
+    color: var(--very-dark-grayish-blue);
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.35rem;
+}
+
+.testimonial p.testimony-person{
+    color: var(--grayish-blue);
+    font-size: 0.75rem;
+}
+
+.testimonial p.testimony-person strong{
+    color: black;
+    display: block;
+}
+
+.testimonial img{
+    border-radius: 50%;
+    height: 3rem;
 }
 
 #pictures{

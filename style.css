@@ -110,7 +110,6 @@ main h1{
 .small-card{
     min-height: 70vh;
     width: auto;
-    /* width: 50%; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -226,6 +225,8 @@ h2#testimonial-header{
     justify-self: center;
     color: var(--grayish-blue);
     font-weight: 900;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
 }
@@ -236,6 +237,7 @@ h2#testimonial-header{
     gap: 2rem;
     max-width: 85%;
     margin: 0 auto;
+    margin-bottom: 8rem;
 }
 
 .testimonial{
@@ -246,10 +248,15 @@ h2#testimonial-header{
 
 .testimonial img{
     justify-self: center;
+    margin-bottom: 3rem;
+}
+
+.testimonial p.testimony{
+    margin-bottom: 4rem;
 }
 
 .testimonial p{
-    color: var(--very-dark-grayish-blue);
+    color: var(--dark-grayish-blue);
     text-align: center;
     font-size: 0.9rem;
     line-height: 1.35rem;
@@ -263,6 +270,7 @@ h2#testimonial-header{
 .testimonial p.testimony-person strong{
     color: black;
     display: block;
+    margin-bottom: 0.6rem;
 }
 
 .testimonial img{

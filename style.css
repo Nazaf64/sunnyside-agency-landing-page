@@ -40,7 +40,10 @@ font-family: 'Fraunces', serif; */
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+}
 
+#top-container img#logo{
+    width: 10rem;
 }
 
 header{
@@ -291,8 +294,45 @@ footer{
     background-color: var(--footer-color);
 }
 
-nav#bottom-nav ul li {
+footer #footer-container{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+footer #footer-container img#footer_logo{
+    margin: 0 auto;
+    width: 10rem;
+    margin-bottom: 1.8rem;
+}
+
+nav#bottom-nav{
+    margin-bottom: 4.5rem;
+}
+
+nav#bottom-nav ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;
+}
+
+nav#bottom-nav ul li{
     color: var(--dark-desaturated-cyan);
+    list-style: none;
+}
+
+nav#bottom-nav ul li a{
+    text-decoration: none;
+    color: var(--dark-moderate-cyan);
+}
+
+#social-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 0 auto;
 }
 
 

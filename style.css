@@ -337,6 +337,100 @@ nav#bottom-nav ul li a{
 
 
 
-@media screen and (max-width:850px){
+@media screen and (max-width:750px){
+    body{
+        width: 100%;
+    }
 
+    #top-container{
+        background-image: url("images/mobile/image-header.jpg");
+        min-height: 80vh;
+    }
+
+    #top-container img#logo{
+        width: 7.5rem;
+    }
+
+    nav#top-nav ul li{
+        display: block;
+    }
+
+    nav#top-nav ul li a{
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    main h1{        
+        font-size: 2.3rem;        
+        min-width: 80%;        
+        letter-spacing: 0.5rem;
+    }
+
+    #pic-desc{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .small-card.content.desc-one{
+        order: 1;
+    }
+
+    .small-card.egg{
+        order: 0;
+    }
+
+    .small-card.cup{
+        order: 2;
+    }
+
+    .small-card.content.desc-two{
+        order: 3;
+    }
+
+    .small-card.berries{
+        order: 4;
+    }
+
+    .small-card.orange{
+        order: 5;
+    }
+
+    /* .small-card{
+        min-height: 70vh;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } */
+    
+    .small-card.content{
+        max-width: 85%;
+        text-align: center;
+    }
+
+    .small-card.content.desc-one p{
+        color: var(--dark-grayish-blue);
+        /* color: var(--grayish-blue); */
+    }
+
+    #testimonials{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    h2#testimonial-header{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .testimonial img{
+        justify-self: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .testimonial p.testimony{
+        margin-bottom: 1.5rem;
+    }
 }
